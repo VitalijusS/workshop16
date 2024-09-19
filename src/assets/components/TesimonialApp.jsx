@@ -10,8 +10,6 @@ export function TestimonialApp() {
         fetch(`https://jsonplaceholder.typicode.com/${testimonials}`)
             .then(response => response.json())
             .then(json => setContent(json));
-        console.log(content);
-
     }, [testimonials])
 
     return (
